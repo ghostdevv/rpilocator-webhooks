@@ -9,3 +9,6 @@ node_compat = true
 kv_namespaces = [
     { binding = "GUIDS", id = "52de2e4e27984d7a993fd4ef02aaae1d", preview_id = "52de2e4e27984d7a993fd4ef02aaae1d" }
 ]
+
+[triggers]
+crons = ["0 */6 * * *"]
