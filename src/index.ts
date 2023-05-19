@@ -37,21 +37,6 @@ async function get_pis(env: Env) {
 }
 
 export default {
-	// async fetch(request: Request, env: Env, ctx: ExecutionContext) {
-	// 	const url = new URL(request.url);
-
-	// 	if (url.pathname == '/') {
-	// 		const pis = await get_pis(env);
-
-	// 		return new Response(JSON.stringify(pis), {
-	// 			headers: {
-	// 				'content-type': 'application/json',
-	// 			},
-	// 		});
-	// 	}
-
-	// 	return new Response('Not Found', { status: 404 });
-	// },
 	async scheduled(event: ScheduledEvent, env: Env, ctx: ExecutionContext) {
 		const pis = await get_pis(env);
 
