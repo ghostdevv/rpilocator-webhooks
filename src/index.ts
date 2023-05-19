@@ -1,6 +1,5 @@
 import { parseStringPromise } from 'xml2js';
 import { Item, RssData } from './types';
-import { isToday } from 'date-fns';
 
 // import raw from './sample';
 
@@ -21,8 +20,7 @@ async function get_pis(env: Env) {
 
 	const meta_filtered = data.rss.channel.item
 		.filter((pi) => pi.category.some((c) => PIS.includes(c)))
-		.filter((pi) => pi.category.some((c) => COUNTRIES.includes(c)))
-		.filter((pi) => isToday(new Date(pi.pubDate)));
+		.filter((pi) => pi.category.some((c) => COUNTRIES.includes(c)));
 
 	const filtered: Item[] = [];
 
