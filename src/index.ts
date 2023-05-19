@@ -48,8 +48,8 @@ export default {
 				},
 				body: JSON.stringify({
 					Status: 'PI Alert',
-					Link: pi.link[0],
-					Title: pi.title[0],
+					Link: pi.link,
+					Title: pi.title,
 					Categories: pi.category.join(', '),
 					Date: pi.pubDate,
 				}),
