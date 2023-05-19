@@ -7,10 +7,10 @@
     },
     "devDependencies": {
         "@cloudflare/workers-types": "^4.20230419.0",
+        "@types/xml2js": "^0.4.11",
+        "date-fns": "^2.30.0",
         "typescript": "^5.0.4",
-        "wrangler": "^2.20.0"
-    },
-    "dependencies": {
-        "fast-xml-parser": "^4.2.2"
+        "wrangler": "^2.20.0",
+        "xml2js": "^0.5.0"
     }
 }

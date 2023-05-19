@@ -1,7 +1,11 @@
-name = "CHANGE_ME"
+name = "rpilocator-webhooks"
 account_id = "44321e1b7fbd29b56b65c1890a3bbee2"
 compatibility_date = "2023-05-10"
 
 main = "src/index.ts"
 
-kv_namespaces = []
+node_compat = true
+
+kv_namespaces = [
+    { binding = "GUIDS", id = "52de2e4e27984d7a993fd4ef02aaae1d", preview_id = "52de2e4e27984d7a993fd4ef02aaae1d" }
+]
