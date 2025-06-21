@@ -1,5 +1,5 @@
+import type { Item, RssData } from './types';
 import { parseStringPromise } from 'xml2js';
-import { Item, RssData } from './types';
 
 // import raw from './sample';
 

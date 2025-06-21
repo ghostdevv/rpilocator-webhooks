@@ -3,9 +3,8 @@
         "strict": true,
         "allowJs": true,
         "module": "esnext",
-        "target": "es2021",
+        "target": "ESNext",
         "noImplicitAny": true,
-        "keyofStringsOnly": true,
         "resolveJsonModule": true,
         "strictBindCallApply": true,
         "forceConsistentCasingInFileNames": true,
@@ -16,8 +15,9 @@
         "sourceMap": false,
         "checkJs": true,
         "noEmit": true,
+        "verbatimModuleSyntax": true,
         "types": ["@cloudflare/workers-types"]
     },
-    "include": ["@types", "src"],
-    "exclude": ["build", "node_modules"]
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules/**"]
 }
